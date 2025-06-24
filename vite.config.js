@@ -7,10 +7,12 @@ export default defineConfig({
   server: {
     port: process.env.PORT || 4173,
     host: true,
+    allowedHosts: ["react-netflix-course.onrender.com"],
   },
   preview: {
     port: process.env.PORT || 4173,
     host: true,
+    allowedHosts: ["react-netflix-course.onrender.com"],
   },
   plugins: [react(), tailwindcss()],
 });
